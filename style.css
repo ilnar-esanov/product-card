@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 78px;
+  color: #515076;
+  text-align: center;
+  margin-top: 220px;
+  margin-bottom: 110px;
+}
+
+ul.items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items {
+  width: 340px;
+  margin: 0 45px;
+}
+
+.items_item {
+  padding: 25px;
+  background-color: #F7F7FA;
+  margin-bottom: 45px;
+}
+.items_image {
+  width: 290px;
+  height: 245px;
+  margin-bottom: 30px;
+}
+.items_type {
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  color: #A5A3B9;
+}
+.items_subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #515076;
+  margin-bottom: 5px;
+}
+.items_decs {
+  margin-bottom: 15px;
+}
+.text_main {
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+
+.items_list {
+  padding-left: 12px;
+  margin-bottom: 25px;
+}
+
+.items_price-name {
+  font-weight: 700;
+  color: #515076;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.items_price {
+  font-weight: 400;
+  color: #515076;
+  font-size: 20px;
+  line-height: 24px;
+}
