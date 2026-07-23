@@ -66,9 +66,17 @@ ul.items {
   color: #515076;
 }
 
+.items_list-title {
+  margin-bottom: 5px;
+}
+
 .items_list {
-  padding-left: 12px;
+  padding-left: 15px;
   margin-bottom: 25px;
+}
+
+.items_list-item {
+  padding-bottom: 5px;
 }
 
 .items_price-name {
@@ -83,4 +91,5 @@ ul.items {
   color: #515076;
   font-size: 20px;
   line-height: 24px;
+  margin-left: 140px;
 }
