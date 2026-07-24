@@ -9,7 +9,10 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   padding: 0;
   margin: 0;
 }
@@ -36,20 +39,23 @@ ul.items {
 
 .items_item {
   padding: 25px;
-  background-color: #F7F7FA;
+  background-color: #f7f7fa;
   margin-bottom: 45px;
 }
+
 .items_image {
   width: 290px;
   height: 245px;
   margin-bottom: 30px;
 }
+
 .items_type {
   font-size: 12px;
   line-height: 24px;
   margin-bottom: 5px;
-  color: #A5A3B9;
+  color: #a5a3b9;
 }
+
 .items_subtitle {
   font-weight: 700;
   font-size: 20px;
@@ -57,9 +63,11 @@ ul.items {
   color: #515076;
   margin-bottom: 5px;
 }
+
 .items_decs {
   margin-bottom: 15px;
 }
+
 .text_main {
   font-size: 13px;
   line-height: 18px;
