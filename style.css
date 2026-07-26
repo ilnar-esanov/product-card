@@ -11,6 +11,9 @@ h1, h2, h3, p, ul {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-image: url("/img/background_flowers.png");
+  background-repeat: no-repeat;
+  background-position: 200px 0;
 }
 
 .heading {
@@ -25,7 +28,7 @@ body {
 
 .items {
   width: 1110px;
-  margin: 0 auto 116px ;
+  margin: 0 auto 116px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
