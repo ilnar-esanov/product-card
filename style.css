@@ -4,14 +4,18 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, p, ul {
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("/img/background_flowers.png");
+  background-image: url('/img/background_flowers.png');
   background-repeat: no-repeat;
   background-position: 200px 0;
 }
