@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-  font-family: 'Montserrat', sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .heading {
@@ -18,25 +23,28 @@ body {
   margin-bottom: 110px;
 }
 
-ul.items {
-  list-style-type: none;
-  padding: 0;
-}
-
 .items {
-  width: 340px;
-  margin: 0 45px;
+  width: 1110px;
+  margin: 0 auto 116px ;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
 }
 
 .items_item {
+  width: 340px;
   padding: 25px;
   background-color: #f7f7fa;
-  margin-bottom: 45px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .items_image {
   width: 290px;
-  height: 245px;
   margin-bottom: 30px;
 }
 
@@ -78,6 +86,11 @@ ul.items {
   padding-bottom: 5px;
 }
 
+.item_price-block {
+  display: flex;
+  justify-content: space-between;
+}
+
 .items_price-name {
   font-weight: 700;
   color: #515076;
@@ -90,5 +103,4 @@ ul.items {
   color: #515076;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 140px;
 }
