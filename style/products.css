@@ -1,0 +1,12 @@
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
+  margin-bottom: 116px;
+}
+
+.products__item {
+  background-color: #f7f7fa;
+  width: 340px;
+}
