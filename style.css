@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-  font-family: 'Montserrat', sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('/img/background_flowers.png');
+  background-repeat: no-repeat;
+  background-position: 200px 0;
+  background-attachment: fixed;
 }
 
 .heading {
@@ -18,36 +31,39 @@ body {
   margin-bottom: 110px;
 }
 
-ul.items {
-  list-style-type: none;
-  padding: 0;
+.product {
+  width: 1110px;
+  margin: 0 auto 116px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
 }
 
-.items {
+.product_card {
   width: 340px;
-  margin: 0 45px;
-}
-
-.items_item {
   padding: 25px;
   background-color: #f7f7fa;
-  margin-bottom: 45px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.items_image {
+.product_image {
   width: 290px;
-  height: 245px;
   margin-bottom: 30px;
 }
 
-.items_type {
+.product_type {
   font-size: 12px;
   line-height: 24px;
   margin-bottom: 5px;
   color: #a5a3b9;
 }
 
-.items_subtitle {
+.product_subtitle {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
@@ -55,7 +71,7 @@ ul.items {
   margin-bottom: 5px;
 }
 
-.items_decs {
+.product_desc {
   margin-bottom: 15px;
 }
 
@@ -65,30 +81,34 @@ ul.items {
   color: #515076;
 }
 
-.items_list-title {
+.product_list-title {
   margin-bottom: 5px;
 }
 
-.items_list {
+.product_list {
   padding-left: 15px;
   margin-bottom: 25px;
 }
 
-.items_list-item {
+.product_list-item {
   padding-bottom: 5px;
 }
 
-.items_price-name {
+.product_price-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_price-name {
   font-weight: 700;
   color: #515076;
   font-size: 20px;
   line-height: 24px;
 }
 
-.items_price {
+.product_price {
   font-weight: 400;
   color: #515076;
   font-size: 20px;
   line-height: 24px;
-  margin-left: 140px;
 }
