@@ -16,6 +16,13 @@ body {
   list-style: none;
 }
 
+.text-main {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #515076;
+}
+
 h1,
 h2,
 p {
