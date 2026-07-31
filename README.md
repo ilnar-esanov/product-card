@@ -6,4 +6,6 @@
 
 # feature/04-homework - flexbox and background-image
 
+# feature/05-homework - BEM
+
 https://ilnar-esanov.github.io/product-card/
