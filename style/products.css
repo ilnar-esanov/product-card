@@ -1,9 +1,8 @@
 .products {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 45px;
-  margin-bottom: 116px;
+  justify-content: center;
 }
 
 .products__card {
