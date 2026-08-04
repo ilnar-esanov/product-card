@@ -1,0 +1,40 @@
+.button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.2s ease;
+  color: #fff;
+  /* width: 350px; */
+}
+
+.buttons__first {
+  background-color: #b27526;
+}
+
+.buttons__all {
+  background-color: #228c52;
+}
+
+.buttons__button-google {
+  background-color: #3a488e;
+  color: #fff;
+}
+
+.buttons__button-reset {
+  background-color: crimson;
+}
+
+.button:hover {
+  background-color: #9b9aad;
+}
+
+.button:active {
+  background-color: #9b9aadbc;
+}
+
+
+

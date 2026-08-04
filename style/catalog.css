@@ -11,5 +11,17 @@
 
 .catalog__heading {
   margin-top: 0;
-  margin-bottom: 110px;
+  margin-bottom: 50px;
+}
+
+.catalog__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.catalog__buttons button {
+  width: 350px;
 }

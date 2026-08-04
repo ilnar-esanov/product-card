@@ -9,3 +9,7 @@
   background-color: #f7f7fa;
   width: 340px;
 }
+
+.products__card_background_added {
+  background-color: aquamarine;
+}

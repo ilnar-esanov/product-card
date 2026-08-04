@@ -45,6 +45,7 @@
 .card__price {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .card__price b {
@@ -59,4 +60,16 @@
   font-size: 20px;
   line-height: 24px;
   color: #515076;
+}
+
+.card__button {
+  background-color: cadetblue;
+}
+
+.card__button_state_added {
+  background-color: chartreuse;
+}
+
+.card__button_state_added:hover {
+  background-color: rgba(128, 255, 0, 0.532);
 }
