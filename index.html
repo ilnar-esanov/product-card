@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/catalog.css" />
     <link rel="stylesheet" href="./style/heading.css" />
+    <link rel="stylesheet" href="./style/buttons.css" />
     <link rel="stylesheet" href="./style/products.css" />
     <link rel="stylesheet" href="./style/card.css" />
     <title>Cards Training</title>
@@ -14,8 +15,22 @@
     <main class="catalog">
       <div class="catalog__container container">
         <h1 class="catalog__heading heading">Выбери свой продукт</h1>
+        <div class="catalog__buttons">
+          <button type="button" class="buttons__first button">
+            Изменить цвет первой карточки
+          </button>
+          <button type="button" class="buttons__all button">
+            Изменить цвет всех карточек
+          </button>
+          <button type="button" class="buttons__button-google button">
+            Загуглить
+          </button>
+          <button type="button" class="buttons__button-reset button">
+            Сбросить
+          </button>
+        </div>
         <ul class="catalog__products products clear-list">
-          <li class="products__card card">
+          <li id="card" class="products__card card">
             <img
               src="./img/moisturizing_mousse_1.jpg"
               alt="Увлажняющий мусс"
@@ -38,6 +53,7 @@
               <b>Цена</b>
               <span>2 750 &#8381;</span>
             </div>
+            <button type="button" class="card__button button">В корзину</button>
           </li>
           <li class="products__card card">
             <img
@@ -62,6 +78,7 @@
               <b>Цена</b>
               <span>3 500 &#8381;</span>
             </div>
+            <button type="button" class="card__button button">В корзину</button>
           </li>
           <li class="products__card card">
             <img
@@ -86,6 +103,7 @@
               <b>Цена</b>
               <span>1 650 &#8381;</span>
             </div>
+            <button type="button" class="card__button button">В корзину</button>
           </li>
           <li class="products__card card">
             <img
@@ -110,6 +128,7 @@
               <b>Цена</b>
               <span>4 750 &#8381;</span>
             </div>
+            <button type="button" class="card__button button">В корзину</button>
           </li>
           <li class="products__card card">
             <img
@@ -135,9 +154,11 @@
               <b>Цена</b>
               <span>7 520 &#8381;</span>
             </div>
+            <button type="button" class="card__button button">В корзину</button>
           </li>
         </ul>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

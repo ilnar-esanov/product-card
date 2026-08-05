@@ -8,4 +8,5 @@
 
 # feature/05-homework - BEM
 
-https://ilnar-esanov.github.io/product-card/
+# feature/06-homework - JS
+
