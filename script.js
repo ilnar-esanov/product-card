@@ -1,6 +1,6 @@
 // Задание №2
 const orangeColor = '#b27526';
-const firstCard = document.querySelector('#card');
+const firstCard = document.querySelector('.card');
 const changeFirstCardColor = document.querySelector('.buttons__first');
 
 changeFirstCardColor.addEventListener('click', () => {
@@ -19,16 +19,14 @@ changeAllCardColor.addEventListener('click', () => {
 });
 
 // Задание №4
-const googleButton = document.querySelectorAll('.buttons__button-google');
+const googleButton = document.querySelector('.buttons__google');
 
-googleButton.forEach(function (button) {
-  button.addEventListener('click', () => {
-    window.open('https://www.google.com/');
+googleButton.addEventListener('click', () => {
+  window.open('https://www.google.com/', '_blank');
 
-    // Задание №5
-    console.log('You pressed google button');
-    alert('You pressed google button');
-  });
+  // Задание №5
+  console.log('You pressed google button');
+  alert('You pressed google button');
 });
 
 // Задание №6
@@ -52,12 +50,12 @@ buyButton.forEach(function (button) {
   });
 });
 
-// reset button 
-const resetButton = document.querySelector('.buttons__button-reset')
-const baseColor = '#f7f7fa'
+// reset button
+const resetButton = document.querySelector('.buttons__reset');
+const baseColor = '#f7f7fa';
 
 resetButton.addEventListener('click', () => {
   productCards.forEach(function (card) {
     card.style.backgroundColor = baseColor;
   });
-})
+});
