@@ -8,7 +8,6 @@
   font-weight: 700;
   transition: background-color 0.2s ease;
   color: #fff;
-  /* width: 350px; */
 }
 
 .buttons__first {
@@ -19,12 +18,12 @@
   background-color: #228c52;
 }
 
-.buttons__button-google {
+.buttons__google {
   background-color: #3a488e;
   color: #fff;
 }
 
-.buttons__button-reset {
+.buttons__reset {
   background-color: crimson;
 }
 
