@@ -46,4 +46,13 @@ const purchaseFunc = (budget) => {
 
 purchaseFunc(60);
 
-// задания 4 и 5 не совсем понял - создать функцию и 3 переменных с произвольным названием (што?)
+// задание №4 - функция
+const greeting = () => {
+  console.log('Hello');
+};
+greeting();
+
+// задание №5 - 3 переменные
+let age = 24;
+const country = 'Uzbekistan';
+const myName = 'Ilnar';
