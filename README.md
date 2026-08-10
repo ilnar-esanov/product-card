@@ -10,3 +10,4 @@
 
 # feature/06-homework - JS
 
+# feature/07-homework - functions
