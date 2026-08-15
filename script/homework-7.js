@@ -5,7 +5,7 @@ const tempFunc = (city, temp) => {
   );
 };
 
-tempFunc('Ташкент', 40);
+// tempFunc('Ташкент', 40);
 
 // задание №2 - Скорость света (if - else)
 const speedOfLight = 299792458;
@@ -22,7 +22,7 @@ const speedComparisonFunc = (speed) => {
   }
 };
 
-speedComparisonFunc(299792458);
+// speedComparisonFunc(299792458);
 
 // задание №3 - Бюджет (if - else + Интерполяция)
 const product = 'Арбуз';
@@ -44,13 +44,13 @@ const purchaseFunc = (budget) => {
   }
 };
 
-purchaseFunc(60);
+// purchaseFunc(60);
 
 // задание №4 - функция
 const greeting = () => {
   console.log('Hello');
 };
-greeting();
+// greeting();
 
 // задание №5 - 3 переменные
 let age = 24;
