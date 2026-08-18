@@ -25,22 +25,20 @@ carInfo.owner = person;
 // task #5 - max speed check function
 const hasMaxSpeed = (object) => {
   if (object.maxSpeed) {
-    console.log('This already exists');
-    return;
-  } else {
-    object.maxSpeed = '200 km/h';
-    console.log(object, 'maxSpeed was added!');
+    console.log('This property already exists!');
   }
+  object.maxSpeed = '200 km/h';
+  console.log(object, 'maxSpeed property was successfully added!');
 };
 
 // hasMaxSpeed(carInfo);
 
 // task #6 - object property
-const objectKeys = (object, objectKey) => {
-  console.log(object[objectKey]);
+const objectsKeys = (object, objectKey) => {
+  console.log(object, object[objectKey]);
 };
 
-// objectKeys(carInfo, 'yearOfProduction');
+// objectsKeys(carInfo, 'yearOfProduction');
 
 // task #7 - array
 const products = ['watermelon', 'apple', 'pears'];
@@ -99,14 +97,16 @@ const watchedMovies = [...movies, ...tvSeries];
 // console.log(watchedMovies);
 
 // task #10 - добавляем isRare через map
-const isMovieOld = watchedMovies.map((movie) => ({
+
+const isMovieOld = watchedMovies.map(movie => ({
   ...movie,
   isOld: movie.year < 2000,
 }));
-isMovieOld.forEach((movie) => {
-  if (movie.isOld) {
-    console.log(`The ${movie.title} is old`);
-  } else {
-    console.log(`the ${movie.title} is new`);
-  }
-});
+isMovieOld.forEach(movie =>
+  movie.isOld
+    ? console.log(`The ${movie.title} is old, ${movie.year}`)
+    : console.log(`The ${movie.title} is new, ${movie.year}`)
+);
+console.log(isMovieOld);
+console.log(isMovieOld['isOld']);
+

@@ -8,17 +8,31 @@ const tempFunc = (city, temp) => {
 // tempFunc('Ташкент', 40);
 
 // задание №2 - Скорость света (if - else)
+function inputValidator(input) {
+  const inputToNumber = Number(input);
+
+  if (inputToNumber === false || input === true) {
+    console.log('ошибка ввода', input);
+    return false
+  }
+  return true
+}
 const speedOfLight = 299792458;
 
 const speedComparisonFunc = (speed) => {
-  if (speed > speedOfLight) {
+  const validationResult = inputValidator(speed);
+  if (!validationResult) {
+    return
+  }
+  else if (speed > speedOfLight) {
     console.log('Сверхсветовая скорость');
+    return;
   } else if (speed < speedOfLight) {
     console.log('Субсветовая скорость');
+    return;
   } else if (speed === speedOfLight) {
     console.log('Скорость света');
-  } else {
-    console.log('Что-то пошло не так');
+    return;
   }
 };
 
@@ -29,6 +43,7 @@ const product = 'Арбуз';
 const price = 20;
 
 const purchaseFunc = (budget) => {
+  inputValidator(budget);
   if (budget > price) {
     const change = budget - price;
     console.log(
@@ -44,7 +59,7 @@ const purchaseFunc = (budget) => {
   }
 };
 
-// purchaseFunc(60);
+// purchaseFunc(20);
 
 // задание №4 - функция
 const greeting = () => {

@@ -13,7 +13,7 @@ const changeAllCardColor = document.querySelector('.buttons__all');
 const greenColor = '#228c52';
 
 changeAllCardColor.addEventListener('click', () => {
-  productCards.forEach(function (card) {
+  productCards.forEach((card) => {
     card.style.backgroundColor = greenColor;
   });
 });
@@ -38,7 +38,7 @@ heading.addEventListener('mouseover', () => {
 
 // Задание №7
 const buyButton = document.querySelectorAll('.card__button');
-buyButton.forEach(function (button) {
+buyButton.forEach((button) => {
   button.addEventListener('click', () => {
     button.classList.toggle('card__button_state_added');
 
