@@ -6,7 +6,14 @@ const filteredNumbers = numbers.filter((number) => number >= 5);
 // task #3 - Создать массив строк, относящихся к любой сущности (название фильмов/книг, кухонные приборы, мебель и т.д.), проверить, есть ли в массиве какая-то определенная сущность.
 
 const fruits = ['apple', 'pear', 'cherry', 'watermelon'];
-fruits.includes('apple');
+
+const fruitChecker = (fruit) => {
+  if (typeof fruit !== 'string') {
+    return 'Название фрукта должно быть строкой!';
+  }
+  return fruits.includes(fruit);
+};
+console.log(fruitChecker('apple'));
 
 // task #4 - Написать функцию, которая аргументом будет принимать массив и изменять его порядок на противоположный ("переворачивать") . Два вышеуказанных массива с помощью этой функции перевернуть.
 
@@ -21,7 +28,7 @@ import { comments } from './comments.js';
 
 // task #7 - Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
-console.log(comments.filter((comment) => comment.email.includes('.com')));
+// console.log(comments.filter((comment) => comment.email.includes('.com')));
 
 // task #8 - Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 
@@ -58,4 +65,3 @@ const commentsWithEmails = comments.map((comment) => comment.email);
 const emailsToString1 = emailsReduce.toString();
 
 const emailsToString2 = emailsReduce.join(', ');
-
