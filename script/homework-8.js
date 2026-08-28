@@ -93,20 +93,33 @@ const tvSeries = [
   },
 ];
 
+const changedTvSeries = tvSeries.map((episode, index) => ({
+  ...episode,
+  isOld: episode.year < 2000,
+  duration: index === 0 ? 100 : 90,
+}));
+
+changedTvSeries.forEach((episode) =>
+  episode.isOld
+    ? console.log(`The ${episode.title} is old`)
+    : console.log(`The ${episode.title} is new`)
+);
+
+console.log(changedTvSeries);
+
 const watchedMovies = [...movies, ...tvSeries];
 // console.log(watchedMovies);
 
 // task #10 - добавляем isRare через map
 
-const isMovieOld = watchedMovies.map(movie => ({
+const isMovieOld = watchedMovies.map((movie) => ({
   ...movie,
   isOld: movie.year < 2000,
 }));
-isMovieOld.forEach(movie =>
-  movie.isOld
-    ? console.log(`The ${movie.title} is old, ${movie.year}`)
-    : console.log(`The ${movie.title} is new, ${movie.year}`)
+isMovieOld.forEach(
+  (movie) => movie.isOld
+  // ? console.log(`The ${movie.title} is old, ${movie.year}`)
+  // : console.log(`The ${movie.title} is new, ${movie.year}`)
 );
-console.log(isMovieOld);
-console.log(isMovieOld['isOld']);
-
+// console.log(isMovieOld);
+// console.log(isMovieOld['isOld']);

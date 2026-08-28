@@ -8,15 +8,15 @@ const tempFunc = (city, temp) => {
 // tempFunc('Ташкент', 40);
 
 // задание №2 - Скорость света (if - else)
-function inputValidator(input) {
-  const inputToNumber = Number(input);
+// function inputValidator(input) {
+//   const inputToNumber = Number(input);
 
-  if (inputToNumber === false || input === true) {
-    console.log('ошибка ввода', input);
-    return false
-  }
-  return true
-}
+//   if (inputToNumber === false || input === true) {
+//     console.log('ошибка ввода', input);
+//     return false
+//   }
+//   return true
+// }
 const speedOfLight = 299792458;
 
 const speedComparisonFunc = (speed) => {
