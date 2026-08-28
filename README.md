@@ -11,3 +11,9 @@
 # feature/06-homework - JS
 
 # feature/07-homework - functions
+
+# feature/08-homework - objects and arrays
+
+# feature/09-homework - array methods
+
+# feature/10-homework - content rendering
