@@ -1,6 +1,6 @@
 export const products = [
   {
-    image: './img/moisturizing_mousse_1.jpg',
+    image: 'moisturizing_mousse_1.jpg',
     type: 'для нормальной кожи',
     title: 'Увлажняющий мусс',
     description: 'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.',
@@ -12,7 +12,7 @@ export const products = [
     price: 2750,
   },
   {
-    image: './img/moisturizing_mask_2.jpg',
+    image: 'moisturizing_mask_2.jpg',
     type: 'для нормальной кожи',
     title: 'Увлажняющая маска',
     description: 'Способствует удерживанию влаги в верхних слоях кожи.',
@@ -20,7 +20,7 @@ export const products = [
     price: 3500,
   },
   {
-    image: './img/cleansing_gel_3.jpg',
+    image: 'cleansing_gel_3.jpg',
     type: 'для нормальной кожи',
     title: 'Гель для умывания',
     description: 'Интенсивно очищает, не повреждает защитный барьер кожи.',
@@ -32,7 +32,7 @@ export const products = [
     price: 1650,
   },
   {
-    image: './img/gift_set_4.jpg',
+    image: 'gift_set_4.jpg',
     type: 'для нормальной кожи',
     title: 'Подарочный набор №1',
     description: 'Набор, состоящий из увлажняющего крема и маски.',
@@ -40,7 +40,7 @@ export const products = [
     price: 4750,
   },
   {
-    image: './img/gitft_set_5.jpg',
+    image: 'gitft_set_5.jpg',
     type: 'для нормальной кожи',
     title: 'Подарочный набор №5',
     description:
