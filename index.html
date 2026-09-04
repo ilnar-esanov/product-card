@@ -28,132 +28,26 @@
           <button type="button" class="buttons__reset button">Сбросить</button>
         </div>
         <ul class="catalog__products products clear-list">
-          <li class="products__card card">
-            <img
-              src="./img/moisturizing_mousse_1.jpg"
-              alt="Увлажняющий мусс"
-              class="card__image"
-            />
-            <span class="card__type">для нормальной кожи</span>
-            <h2 class="card__title">Увлажняющий мусс</h2>
-            <p class="card__description text-main">
-              Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.
-            </p>
-            <div class="card__list">
-              <span class="card__list-name text-main">Состав:</span>
-              <ul class="card__list-items text-main">
-                <li>активные натуральные комплексы</li>
-                <li>витамины С, А, РР, В И Е</li>
-                <li>солнцезащитные компоненты</li>
-              </ul>
-            </div>
-            <div class="card__price">
-              <b>Цена</b>
-              <span>2 750 &#8381;</span>
-            </div>
-            <button type="button" class="card__button button">В корзину</button>
-          </li>
-          <li class="products__card card">
-            <img
-              src="./img/moisturizing_mask_2.jpg"
-              alt="Увлажняющая маска"
-              class="card__image"
-            />
-            <span class="card__type">для нормальной кожи</span>
-            <h2 class="card__title">Увлажняющая маска</h2>
-            <p class="card__description text-main">
-              Способствует удерживанию влаги в верхних слоях кожи.
-            </p>
-            <div class="card__list">
-              <span class="card__list-name text-main">Состав:</span>
-              <ul class="card__list-items text-main">
-                <li>воски</li>
-                <li>минералы</li>
-                <li>масла</li>
-              </ul>
-            </div>
-            <div class="card__price">
-              <b>Цена</b>
-              <span>3 500 &#8381;</span>
-            </div>
-            <button type="button" class="card__button button">В корзину</button>
-          </li>
-          <li class="products__card card">
-            <img
-              src="./img/cleansing_gel_3.jpg"
-              alt="Гель для умывания"
-              class="card__image"
-            />
-            <span class="card__type">для нормальной кожи</span>
-            <h2 class="card__title">Гель для умывания</h2>
-            <p class="card__description text-main">
-              Интенсивно очищает, не повреждает защитный барьер кожи.
-            </p>
-            <div class="card__list">
-              <span class="card__list-name text-main">Состав:</span>
-              <ul class="card__list-items text-main">
-                <li>минералы</li>
-                <li>витамины С, А, РР, В И Е</li>
-                <li>солнцезащитные компоненты</li>
-              </ul>
-            </div>
-            <div class="card__price">
-              <b>Цена</b>
-              <span>1 650 &#8381;</span>
-            </div>
-            <button type="button" class="card__button button">В корзину</button>
-          </li>
-          <li class="products__card card">
-            <img
-              src="./img/gift_set_4.jpg"
-              alt="Подарочный набор №1"
-              class="card__image"
-            />
-            <span class="card__type">для нормальной кожи</span>
-            <h2 class="card__title">Подарочный набор №1</h2>
-            <p class="card__description text-main">
-              Набор, состоящий из увлажняющего крема и маски.
-            </p>
-            <div class="card__list">
-              <span class="card__list-name text-main">Состав:</span>
-              <ul class="card__list-items text-main">
-                <li>воски</li>
-                <li>минералы</li>
-                <li>масла</li>
-              </ul>
-            </div>
-            <div class="card__price">
-              <b>Цена</b>
-              <span>4 750 &#8381;</span>
-            </div>
-            <button type="button" class="card__button button">В корзину</button>
-          </li>
-          <li class="products__card card">
-            <img
-              src="./img/gitft_set_5.jpg"
-              alt="Подарочный набор №5"
-              class="card__image"
-            />
-            <span class="card__type">для нормальной кожи</span>
-            <h2 class="card__title">Подарочный набор №5</h2>
-            <p class="card__description text-main">
-              Весь набор средств Invisible symphony, крем, маска, мусс и гель
-              для умывания.
-            </p>
-            <div class="card__list">
-              <span class="card__list-name text-main">Состав:</span>
-              <ul class="card__list-items text-main">
-                <li>воски</li>
-                <li>минералы</li>
-                <li>масла</li>
-              </ul>
-            </div>
-            <div class="card__price">
-              <b>Цена</b>
-              <span>7 520 &#8381;</span>
-            </div>
-            <button type="button" class="card__button button">В корзину</button>
-          </li>
+          <template class="card__template">
+            <li class="products__card card">
+              <img src="" alt="Увлажняющий мусс" class="card__image" />
+              <span class="card__type"></span>
+              <h2 class="card__title"></h2>
+              <p class="card__description text-main"></p>
+              <div class="card__list">
+                <span class="card__list-name text-main">Состав:</span>
+                <ul class="card__list-items text-main">
+                </ul>
+              </div>
+              <div class="card__price">
+                <b>Цена</b>
+                <span></span>
+              </div>
+              <button type="button" class="card__button button">
+                В корзину
+              </button>
+            </li>
+          </template>
         </ul>
       </div>
     </main>
@@ -161,6 +55,7 @@
     <!-- <script src="./script/homework-7.js"></script>
     <script src="./script/homework-8.js"></script> -->
     <script type="module" src="./script/homework-9.js"></script>
+    <script type="module" src="./script/homework-10.js"></script>
     <script type="module" src="./script/comments.js"></script>
   </body>
 </html>
