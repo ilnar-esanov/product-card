@@ -1,0 +1,106 @@
+.catalog__footer {
+  background-color: #3a3a3a;
+  padding: 85px 85px 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer__header {
+  font-size: 24px;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 30px;
+}
+.footer__icon {
+  width: 20px;
+}
+.footer__form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.form {
+  width: 477px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__label {
+  font-size: 24px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #515076;
+  box-shadow: 0 0 0 2px rgba(81, 80, 118, 0.2);
+}
+
+.form__input {
+  border: none;
+  padding: 10px;
+  width: 250px;
+  font-size: 15px;
+}
+
+.form__button {
+  font-size: 18px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  text-decoration: underline;
+}
+
+.form__button::before {
+  content: '|';
+  margin-right: 20px;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer__nav-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__contact {
+  margin: 0 auto;
+  position: relative;
+
+  font-size: 18px;
+}
+
+.footer__contact::before {
+  content: '___________________';
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+}
