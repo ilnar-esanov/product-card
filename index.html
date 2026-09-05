@@ -49,57 +49,125 @@
             </li>
           </template>
         </ul>
-
-        
       </div>
       <footer class="catalog__footer">
-          <div class="footer__container">
-            <div class="footer__info">
-              <h2 class="footer__header">Product Cards</h2>
-              <p class="footer__text">У нас самые лучшие продукты для кожи!</p>
-              <div class="footer__icons">
-                <a class="footer__icon" href="">
-                  <img
-                    src="./icons/telegram-icon.png"
-                    alt="telegram-icon"
-                    
-                  />
-                </a>
-                <a class="footer__icon" href="">
-                  <img
-                    src="./icons/vk-icon.png"
-                    alt="vk-icon"
-                    
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="footer__form-block">
-              <p class="footer__label">Подпишись на наши акции:</p>
-              <form class="form" action="">
-                <input
-                  class="form__input"
-                  type="email"
-                  name="email"
-                  placeholder="Введи Email..."
-                  required
-                />
-                <button class="form__button" type="submit">Подписаться</button>
-              </form>
-            </div>
-            <div class="footer__navigation">
-              <div class="footer__nav-title">Быстрые ссылки</div>
-              <nav>
-                <ul class="footer__nav clear-list">
-                  <li class="footer__nav-link">Главная</li>
-                  <li class="footer__nav-link">Магазин</li>
-                  <li class="footer__nav-link">Контакты</li>
-                </ul>
-              </nav>
+        <div class="footer__container">
+          <div class="footer__info">
+            <h2 class="footer__header">Product Cards</h2>
+            <p class="footer__text">У нас самые лучшие продукты для кожи!</p>
+            <div class="footer__icons">
+              <a class="footer__icon" href="">
+                <img src="./icons/telegram-icon.png" alt="telegram-icon" />
+              </a>
+              <a class="footer__icon" href="">
+                <img src="./icons/vk-icon.png" alt="vk-icon" />
+              </a>
             </div>
           </div>
-          <p class="footer__contact">www.product-cards.com©all right reserve</p>
-        </footer>
+          <div class="footer__form-block">
+            <p class="footer__label">Подпишись на наши акции:</p>
+            <form class="form" action="">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Введи Email..."
+                required
+              />
+              <button class="form__button" type="submit">Подписаться</button>
+            </form>
+            <button type="button" class="button">Регистрация</button>
+            <div class="modal">
+              <form class="modal__form form" action="">
+                <h2 class="modal__heading center">Регистрация</h2>
+                <div class="form__group">
+                  <label for="name" class="form__label">Имя:</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Введи свое имя"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="surname" class="form__label">Фамилия:</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="surname"
+                    name="surname"
+                    placeholder="Введи свою фамилию"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="birthday" class="form__label"
+                    >Дата рождения:</label
+                  >
+                  <input
+                    class="form__input"
+                    type="date"
+                    id="birthday"
+                    name="birthday"
+                    placeholder="Дата рождения"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="login" class="form__label">Логин:</label>
+                  <input
+                    class="form__input"
+                    type="text"
+                    id="login"
+                    name="login"
+                    placeholder="Введи свой логин"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="password" class="form__label">Пароль:</label>
+                  <input
+                    class="form__input"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Введи свой пароль"
+                  />
+                </div>
+
+                <div class="form__group">
+                  <label for="password-confirm" class="form__label"
+                    >Пароль еще раз:</label
+                  >
+                  <input
+                    class="form__input"
+                    type="password"
+                    id="password-confirm"
+                    name="password-confirm"
+                    placeholder="Повтори пароль"
+                  />
+                </div>
+                <button type="button" class="modal__close">&times;</button>
+
+                <button class="button center" type="submit">Подписаться</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__navigation">
+            <div class="footer__nav-title">Быстрые ссылки</div>
+            <nav>
+              <ul class="footer__nav clear-list">
+                <li class="footer__nav-link">Главная</li>
+                <li class="footer__nav-link">Магазин</li>
+                <li class="footer__nav-link">Контакты</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <p class="footer__contact center">www.product-cards.com©all right reserve</p>
+      </footer>
     </main>
     <script src="./script/script.js"></script>
     <!-- <script src="./script/homework-7.js"></script>

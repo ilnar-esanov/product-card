@@ -1,3 +1,7 @@
+.center {
+  margin: 0 auto;
+}
+
 .catalog__footer {
   background-color: #3a3a3a;
   padding: 85px 85px 30px;
@@ -55,7 +59,7 @@ input:focus {
 
 .form__input {
   border: none;
-  padding: 10px;
+  padding: 12px;
   width: 250px;
   font-size: 15px;
 }
@@ -92,7 +96,6 @@ input:focus {
 }
 
 .footer__contact {
-  margin: 0 auto;
   position: relative;
 
   font-size: 18px;
@@ -104,3 +107,51 @@ input:focus {
   bottom: 50px;
   left: 100px;
 }
+
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__label {
+  width: 150px;
+}
+
+.modal__form {
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  width: 100%;
+  padding: 20px;
+
+  position: relative;
+
+  background-color: #515076;
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.modal__close:hover {
+  background-color: #410d0d63;
+}
+
+.modal__button {
+  background-color: cadetblue;
+}
+
+
+
