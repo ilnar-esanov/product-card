@@ -33,7 +33,7 @@
 .footer__form-block {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -118,6 +118,14 @@ input:focus {
   width: 150px;
 }
 
+.modal {
+  display: none;
+}
+
+.modal-showed {
+  display: block;
+}
+
 .modal__form {
   flex-direction: column;
   align-items: start;
@@ -149,9 +157,6 @@ input:focus {
   background-color: #410d0d63;
 }
 
-.modal__button {
-  background-color: cadetblue;
-}
 
 
 
