@@ -77,82 +77,87 @@
               <button class="form__button" type="submit">Подписаться</button>
             </form>
             <button type="button" class="form__sign-up button">Регистрация</button>
-            <div class="modal">
-              <form class="modal__form form" action="">
-                <h2 class="modal__heading center">Регистрация</h2>
-                <div class="form__group">
-                  <label for="name" class="form__label">Имя:</label>
-                  <input
-                    class="form__input"
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Введи свое имя"
-                  />
-                </div>
-
-                <div class="form__group">
-                  <label for="surname" class="form__label">Фамилия:</label>
-                  <input
-                    class="form__input"
-                    type="text"
-                    id="surname"
-                    name="surname"
-                    placeholder="Введи свою фамилию"
-                  />
-                </div>
-
-                <div class="form__group">
-                  <label for="birthday" class="form__label"
-                    >Дата рождения:</label
-                  >
-                  <input
-                    class="form__input"
-                    type="date"
-                    id="birthday"
-                    name="birthday"
-                    placeholder="Дата рождения"
-                  />
-                </div>
-
-                <div class="form__group">
-                  <label for="login" class="form__label">Логин:</label>
-                  <input
-                    class="form__input"
-                    type="text"
-                    id="login"
-                    name="login"
-                    placeholder="Введи свой логин"
-                  />
-                </div>
-
-                <div class="form__group">
-                  <label for="password" class="form__label">Пароль:</label>
-                  <input
-                    class="form__input"
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Введи свой пароль"
-                  />
-                </div>
-
-                <div class="form__group">
-                  <label for="password-confirm" class="form__label"
-                    >Пароль еще раз:</label
-                  >
-                  <input
-                    class="form__input"
-                    type="password"
-                    id="password-confirm"
-                    name="password-confirm"
-                    placeholder="Повтори пароль"
-                  />
-                </div>
-                <button type="button" class="modal__close">&times;</button>
-
-                <button class="button center" type="submit">Подписаться</button>
-              </form>
+            <div class="overlay">
+              <div class="modal">
+                <form class="modal__form form" action="">
+                  <h2 class="modal__heading center">Регистрация</h2>
+                  <div class="form__group">
+                    <label for="name" class="form__label">Имя:</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Введи свое имя"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="surname" class="form__label">Фамилия:</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      id="surname"
+                      name="surname"
+                      placeholder="Введи свою фамилию"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="birthday" class="form__label"
+                      >Дата рождения:</label
+                    >
+                    <input
+                      class="form__input"
+                      type="date"
+                      id="birthday"
+                      name="birthday"
+                      placeholder="Дата рождения"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="login" class="form__label">Логин:</label>
+                    <input
+                      class="form__input"
+                      type="text"
+                      id="login"
+                      name="login"
+                      placeholder="Введи свой логин"
+                      required
+                      minlength="3"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="password" class="form__label">Пароль:</label>
+                    <input
+                      class="form__input"
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="Введи свой пароль"
+                      required
+                      minlength="4"
+                    />
+                  </div>
+                  <div class="form__group">
+                    <label for="password-confirm" class="form__label"
+                      >Пароль еще раз:</label
+                    >
+                    <input
+                      class="form__input"
+                      type="password"
+                      id="password-confirm"
+                      name="password-confirm"
+                      placeholder="Повтори пароль"
+                      required
+                      minlength="4"
+                    />
+                  </div>
+                  <button type="button" class="modal__close">&times;</button>
+                  <button class="button center" type="submit">Подписаться</button>
+                </form>
+              </div>
             </div>
           </div>
           <div class="footer__navigation">
@@ -174,7 +179,7 @@
     <script src="./script/homework-8.js"></script> -->
     <script type="module" src="./script/comments.js"></script>
     <script type="module" src="./script/homework-9.js"></script>
-    <!-- <script type="module" src="./script/homework-10.js"></script> -->
+    <script type="module" src="./script/homework-10.js"></script>
     <script type="module" src="./script/homework-11.js"></script>
   </body>
 </html>
