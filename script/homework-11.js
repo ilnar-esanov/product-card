@@ -6,14 +6,7 @@ const signUpForm = document.querySelector('.modal__form');
 const closeButton = document.querySelector('.modal__close');
 const overlay = document.querySelector('.overlay');
 
-// задание 4 - способ №1
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const Inputemail = input.value;
-  console.log({ email: Inputemail });
-});
-
-// задание 4 - способ №2
+// задание 4
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -34,12 +27,12 @@ signUpButton.addEventListener('click', () => {
 // close modal button
 closeButton.addEventListener('click', () => {});
 
-const closeModel = () => {
+const closeModal = () => {
   formBlock.classList.remove('modal-showed');
   overlay.classList.remove('overlay_visible');
 };
 
-closeButton.addEventListener('click', closeModel);
+closeButton.addEventListener('click', closeModal);
 
 // modal window logic
 let user;
@@ -71,5 +64,5 @@ signUpForm.addEventListener('submit', (event) => {
   };
 
   console.log(user);
-  closeModel();
+  closeModal();
 });
