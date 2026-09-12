@@ -5,14 +5,14 @@ const tempFunc = (city, temp) => {
   );
 };
 
-// tempFunc('Ташкент', 40);
+tempFunc('Ташкент', 40);
 
 // задание №2 - Скорость света (if - else)
 function inputValidator(input) {
   const inputToNumber = Number(input);
 
   if (inputToNumber === false || input === true) {
-    // console.log('ошибка ввода', input);
+    console.log('ошибка ввода', input);
     return false
   }
   return true
@@ -36,7 +36,7 @@ const speedComparisonFunc = (speed) => {
   }
 };
 
-// speedComparisonFunc(299792458);
+speedComparisonFunc(299792458);
 
 // задание №3 - Бюджет (if - else + Интерполяция)
 const product = 'Арбуз';
@@ -59,7 +59,7 @@ const purchaseFunc = (budget) => {
   }
 };
 
-// purchaseFunc(20);
+purchaseFunc(20);
 
 // задание №4 - функция
 const greeting = () => {
