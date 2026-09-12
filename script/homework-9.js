@@ -21,14 +21,12 @@ const reverseArray = (array1) => array1.reverse();
 reverseArray(numbers);
 reverseArray(fruits);
 
-// task #5 => in the file comments.js
-
 // task #6 - import variable
 import { comments } from './comments.js';
 
 // task #7 - Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
-// console.log(comments.filter((comment) => comment.email.includes('.com')));
+console.log(comments.filter((comment) => comment.email.includes('.com')));
 
 // task #8 - Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 

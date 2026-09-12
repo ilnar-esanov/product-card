@@ -31,14 +31,14 @@ const hasMaxSpeed = (object) => {
   console.log(object, 'maxSpeed property was successfully added!');
 };
 
-// hasMaxSpeed(carInfo);
+hasMaxSpeed(carInfo);
 
 // task #6 - object property
 const objectsKeys = (object, objectKey) => {
   console.log(object, object[objectKey]);
 };
 
-// objectsKeys(carInfo, 'yearOfProduction');
+objectsKeys(carInfo, 'yearOfProduction');
 
 // task #7 - array
 const products = ['watermelon', 'apple', 'pears'];
@@ -74,7 +74,6 @@ movies.push({
   isWatched: false,
 });
 
-// console.log(movies);
 
 // task #9
 const tvSeries = [
@@ -108,7 +107,7 @@ changedTvSeries.forEach((episode) =>
 console.log(changedTvSeries);
 
 const watchedMovies = [...movies, ...tvSeries];
-// console.log(watchedMovies);
+console.log(watchedMovies);
 
 // task #10 - добавляем isRare через map
 
@@ -118,8 +117,7 @@ const isMovieOld = watchedMovies.map((movie) => ({
 }));
 isMovieOld.forEach(
   (movie) => movie.isOld
-  // ? console.log(`The ${movie.title} is old, ${movie.year}`)
-  // : console.log(`The ${movie.title} is new, ${movie.year}`)
+  ? console.log(`The ${movie.title} is old, ${movie.year}`)
+  : console.log(`The ${movie.title} is new, ${movie.year}`)
 );
-// console.log(isMovieOld);
-// console.log(isMovieOld['isOld']);
+
