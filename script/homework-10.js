@@ -70,4 +70,4 @@ const productDescriptions = products.reduce((accumulator, product) => {
   accumulator[product.title] = product.description;
   return accumulator;
 }, {});
-console.log(productDescriptions);
+// console.log(productDescriptions);

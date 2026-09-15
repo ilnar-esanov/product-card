@@ -1,8 +1,23 @@
-export const input = document.querySelector('.form__input');
-export const signUpButton = document.querySelector('.form__sign-up');
-export const formBlock = document.querySelector('.modal');
-export const closeButton = document.querySelector('.modal__close');
-export const overlay = document.querySelector('.overlay');
-export const modal = document.getElementById('modal')
-export const form = document.getElementById('form');
+import { Modal } from './Modal.js';
+import { Form } from './Form.js';
 
+const signUpButton = document.querySelector('.form__sign-up');
+
+const modalWindow = new Modal('modal');
+const formBlock = new Form('form');
+
+signUpButton.addEventListener('click', () => modalWindow.openModal());
+
+formBlock.form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!formBlock.isFormValid()) {
+    alert('Форма заполнена некорректно!');
+    
+    return;
+  }
+  const userInfo = formBlock.getFormData();
+  console.log(userInfo);
+
+  modalWindow.closeModal();
+  formBlock.resetForm();
+});

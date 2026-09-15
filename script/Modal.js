@@ -1,13 +1,14 @@
-import * as dom from './homework-11.js';  
-
-class Modal {
+export class Modal {
   constructor(id) {
-    this.id = id;
+    this.modal = document.getElementById(id);
+    this.closeButton = this.modal.querySelector('.modal__close');
+    this.overlay = this.modal.closest('.overlay');
+
     this.closeWindowButton();
   }
 
   isModalOpen() {
-    if (dom.formBlock.classList.contains('modal-showed')) {
+    if (this.modal.classList.contains('modal-showed')) {
       console.log('Modal window is open');
       return true
     } else {
@@ -17,21 +18,19 @@ class Modal {
   }
 
   openModal() {
-    dom.formBlock.classList.add('modal-showed');
-    dom.overlay.classList.add('overlay_visible');
+    this.modal.classList.add('modal-showed');
+    this.overlay.classList.add('overlay_visible');
     this.isModalOpen();
   }
 
   closeModal() {
-    dom.formBlock.classList.remove('modal-showed');
-    dom.overlay.classList.remove('overlay_visible');
+    this.modal.classList.remove('modal-showed');
+    this.overlay.classList.remove('overlay_visible');
     this.isModalOpen();
   }
 
   closeWindowButton() {
-    dom.closeButton.addEventListener('click', () => modalWindow.closeModal());
+    this.closeButton.addEventListener('click', () => this.closeModal());
   }
 }
 
-export const modalWindow = new Modal(dom.modal);
-dom.signUpButton.addEventListener('click', () => modalWindow.openModal());

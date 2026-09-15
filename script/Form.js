@@ -1,14 +1,10 @@
-import * as dom from './homework-11.js';
-import { modalWindow } from './Modal.js';
-
-let user;
-class Form {
+export class Form {
   constructor(id) {
-    this.id = id;
+    this.form = document.getElementById(id);
   }
 
   getFormData() {
-    const formData = new FormData(this.id);
+    const formData = new FormData(this.form);
 
     const userName = formData.get('name');
     const useSurname = formData.get('surname');
@@ -17,7 +13,7 @@ class Form {
     const userPassword = formData.get('password');
     const userPasswordAgain = formData.get('password-confirm');
 
-    user = {
+    const user = {
       name: userName,
       surname: useSurname,
       birthday: userBirthday,
@@ -31,31 +27,13 @@ class Form {
   }
 
   isFormValid() {
-    return this.id.checkValidity();
+    const user = this.getFormData();
+    const passwordsMatch = user.password === user.passwordAgain;
+
+    return this.form.checkValidity() && passwordsMatch;
   }
 
   resetForm() {
-    this.id.reset();
+    this.form.reset();
   }
 }
-
-const modalForm = new Form(dom.form);
-
-dom.form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (!modalForm.isFormValid()) {
-    alert('Форма заполнена некорректно!');
-    return;
-  }
-  const userInfo = modalForm.getFormData();
-
-  if (userInfo.password !== userInfo.passwordAgain) {
-    alert('Пароли не совпадают!');
-    return;
-  }
-
-  user = userInfo;
-  console.log(userInfo);
-  modalWindow.closeModal();
-  modalForm.resetForm();
-});

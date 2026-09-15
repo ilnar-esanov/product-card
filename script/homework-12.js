@@ -14,7 +14,7 @@ class Phone {
 }
 
 const myPhone = new Phone('Xiaomi', '17t', 256, 16);
-myPhone.isWorking();
+// myPhone.isWorking();
 
 class Iphone extends Phone {
   constructor(brand, model, memory, ram, battery) {
@@ -30,4 +30,4 @@ class Iphone extends Phone {
 }
 
 const newIphone = new Iphone('Apple', 'Iphone 17 Pro Max', 128, 12, 95);
-newIphone.inStock();
+// newIphone.inStock();
