@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+
+  <button class="button" id="registration-button">Регистрация</button>
+  <button class="button" id="auth-button">Аутентификация</button>
+
+  <div id="registration-modal" class="modal">
+    <button id="modal-close-button" class="modal-close-button">X</button>
+    <h1>Регистрация</h1>
+    <span>Пароль</span>
+    <span>Повторите пароль</span>
+    <span>Логин</span>
+    <span>Почта</span>
+  </div>
+
+  <div id="auth-modal" class="modal">
+    <button id="modal-close-button" class="modal-close-button">X</button>
+    <h1>Аутентификация</h1>
+    <p>Логин</p>
+    <p>Пароль</p>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
